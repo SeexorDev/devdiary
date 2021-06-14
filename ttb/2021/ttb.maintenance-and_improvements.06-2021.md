@@ -1,6 +1,3 @@
-
-# TECHNICAL THREAD BULLETIN
-
 ~~~
 
  _____ _____ _____ __ __ _____ _____
@@ -8,8 +5,8 @@
 |__   |   __|   __|-   -|  |  |    -|
 |_____|_____|_____|__|__|_____|__|__|
 
- SEEXOR PROJECT UPDATE
- TTB of may - 2021
+ TECHNICAL THREAD BULLETIN   06-2021
+ SEEXOR PROJECT UPDATE & MAINTENANCE
 
 ~~~
 
