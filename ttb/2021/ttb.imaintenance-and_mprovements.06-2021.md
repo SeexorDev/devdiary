@@ -1,5 +1,5 @@
 
-#TECHNICAL THREAD BULLETIN
+# TECHNICAL THREAD BULLETIN
 
 ~~~
 
@@ -8,8 +8,8 @@
 |__   |   __|   __|-   -|  |  |    -|
 |_____|_____|_____|__|__|_____|__|__|
 
-        SEEXOR PROJECT UPDATE
-          TTB of may - 2021
+ SEEXOR PROJECT UPDATE
+ TTB of may - 2021
 
 ~~~
 
