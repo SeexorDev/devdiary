@@ -1,0 +1,682 @@
+
+# SEEXOR PROJECT DIARY
+~~~
+all updates in 2021-202X
+~~~
+
+---
+
+
+
+<br>
+
+#### ⚊ from full [ftp] to [localhost]
+
+-	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--00FFFF.svg)]()
+	[![](https://img.shields.io/badge/completed-06/21-green.svg)]()<br>
+	> Passaggio intermedio di stop [ftp].<br>
+	In estrama sintesi: viene costruita una copia di seexor.com su dei computer con un [server] fittizio che funziona su dei computer aziendali (vedi [localhost]) per lavorare agli [update] (ve anche [patch]) senza compromettere direttamente il sito reale.
+
+<br>
+
+#### ⚊ service.php upgrade + path roles
+
+-	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/completed-06/21-green.svg)]()<br>
+	> Il file service.php garantisce il recupero della quasi totalità delle risorse del sito, ad esempio ogni immagine o url interno. Tra i suoi compiti, difatti, c'è l'analisi dei percorsi dei file del sito all'interno del [server].
+
+	aggiornamento [php] service del [frontend] [migliorato direttamente a V4].
+
+-	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/completed-06/21-green.svg)]()<br>
+	> Rappresenta, in estram sintesi, l'aggiornamento di tutti i file del sito collegati al punto precedente.
+
+	aggiornamento e ricollegamento percorsi e delle nomenclature
+
+
+
+<br>
+
+#### ⚊ test versione [try/cath] su [API]
+
+-	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/initialized-06/21-orange.svg)]()<br>
+	> 	Allo stato attuale è attivo con in corso di test sulla sezione in home del [front-office].<br>
+		Non è attivo su altre [API] call [script].<br>
+		In estrema sintesi può essere visto come un "bypass preventivo". Questa procedura informatica (in codice) garantisce un approccio in grado di restituire un valore di "Fallimento" -altrimenti impossibile da ottenere- qualora le [API] dovessero bloccarsi per un malfunzionamento tra [front e backend] ed evitando il crash (blocco totale) della pagina.
+
+
+
+<br>
+
+#### ⚊ Cambiare da seexor s.r.l. a medixor s.r.l.
+> richiesta del Dottor Del Vecchio
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/completed-06/21-green.svg)]()<br>
+	Aggiorna nome e referenze su tutte le pagine
+
+
+
+<br>
+
+#### ⚊ Loginbox ovunque ([back-office])
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/completed-06/21-green.svg)]()<br>
+	> Costruire un sistema di maggiore efficienza per l'accesso dando la possibilità agli amministratori di entrare nel sito da qualsiasi parte del [back-office].
+
+
+
+
+<br>
+
+#### ⚊ passare da [ftp] a [localhost]/[github]
+
+-	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--00FFFF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	> è necesassario l'ausilio dello staff di [backend] per lo spostamento del database<br>
+	ristrutturare [repo] e [github]
+	caricare e collegare [repo] [github]
+	fermare gli [update] via [ftp]
+
+
+
+<br>
+
+#### ⚊ sessione e [history-back] fails
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	> è sperimentale e riguarda esclusivamente il [front-office]. Esiste la necessità di affrontare 3 punti che non vengono storicizzati durante la navigazione utente:
+
+	A Nelle ricerche deve conservare la [querystring]
+	<br> > ...questo però comporta un controllo aggiuntivo sui filtri? E' dunque fattibile? <br>
+	B La navigazione dovrebbe conservare da dove e cosa
+	<br> > ...Si, ma stabilito in che senso e cosa deve conservare... Serve ricostruire dei casi d'uso. <br>
+	C "aggiorna" dalla ricerca porta a pagina principale
+	<br> > ...probabile [bug] <br>
+
+
+
+<br>
+
+#### ⚊ implementazione co-guard
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--00FFFF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	sia per l'aggiornamento prodotti che per l'eliminazione automatica [co-guard]
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--00FFFF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	Aggiungi "prodotto non più online" tramite codice o [API] di [co-guard]
+
+
+
+
+<br>
+
+#### ⚊ Distinguere case produttrici da venditori
+> richiesta del Dottore Del Vecchio
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--00FFFF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	Serve una flag "produttore" oltre la flag store
+
+
+
+<br>
+
+#### ⚊ [SEO]: strutturale -> part 1 of 2
+
+> tema e [frontend], no management [backend]). <br> realizzazione di tutte le strutture html per una corretta indicizzazione organica
+
+-	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	apertura di ogni canale Google e ufficialmente al pubblico
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	Costruzione implementazione [script] sitemap
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	analisi, meta e strutture, articoli, aeria tags, potenziale altro
+
+
+
+
+<br>
+
+#### ⚊ [SEO]: strutturale -> part 2 of 2
+> management via [back-office], non dovrebbe essere necessario lo staff di [backend])
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	Implementare un sistema di suggerimenti tra i pannelli del [back-office]
+	++ Se possibile: aggiungere criteri e controlli del sito in generale (pannello [SEO])
+	++ Se possibile: aggiungere criteri e controlli su crea/mod prodotti
+
+
+
+
+<br>
+
+#### ⚊ [SEO]: strumenti per [SMO] e [SHARING]
+> lato tema e [frontend], no management [backend])_
+> è consigliabile attendere ui 2.9 o superiore
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	[front-office]: automatismi per sharing e [SMO]
+
+
+
+<br>
+
+#### ⚊ [SEO]: [freeze] [SEO] [backend])
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--00FFFF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	A [back-office]: implementazione per il salvataggio di elementi customizzati ai fini [SHARING], [SEO], [SEM] o [SMO]<br>
+    	B [back-office]: se possibile: aggiungere criteri e controlli per la [SEO] su crea/mod prodotti<br>
+    	C [back-office]: aggiungere criteri e controlli per la [SHARING] e [SMO] su crea/mod prodotti<br>
+
+
+
+
+<br>
+
+#### ⚊ Aggiungi "BrandLabel" (no brand) su prodotto
+> richiesto da kristi per facilitare il lavoro
+> kristi ha richisto anche "Chi ha creato/moddato questo prodotto?" fattibile seguendo le voci più avanti
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--00FFFF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	Sui risultati di ricerca prodotto, nella linea di prodotto, in [back-office]: Nome brand di questo prodotto;
+
+
+
+<br>
+
+#### ⚊ [API]:
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--00FFFF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	Stop non restuful [API]!<br>
+	Invio e ricezione è solo GET e POST, solo [json]!
+	A Ogni sended deve essere un [json];
+	B Ogni getted deve essere un [json];
+
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--00FFFF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	linear parameters<br>
+	> E' necessaria di una linearizzazione dei params attualmente non definibile su tutte le chiamate.<br>e nelle chiamate...
+	<br>
+	A Send e result sono in alcuni casi camelcase, in altri dash;
+	B Gi int necessitano di '' come "no override";
+	C le string di '' come "no override";
+	D tags solo '' come "no override";
+
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--00FFFF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	stop non restuful parse & recode<br>
+	va codificata ogni stringa con un b64 o urlEncoder, no mezzo e mezzo, no nessuna codifica.
+
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--00FFFF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	stop non restful gallery<br>
+	Lo [script] della gallery va migliorato ed inserito nel contesto [API]
+
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--00FFFF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	tag params conflict<br>
+	A i tags non fanno il parse del comma via [js], vanno inseriti con la virgola via [php] (o viceversa)
+	B se esistono i tags non viene preso la ricerca per titolo e testo parziale
+
+
+
+
+<br>
+
+#### ⚊ Miglioramenti sui pannelli categorie ([back-office])
+
+> questo materiale è in arrivo grazie alla versione 2.9 o superiore del framework ui
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	modalità assegnamento categoria drag & drop in [back-office]
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	pannello con cercare per categoria annidata lato tema
+
+
+
+
+<br>
+
+#### ⚊ Miglioramenti sulle ricerche [front-office]
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--00FFFF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	Limita risultati per la categoria specifica in cui sei
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--00FFFF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	> è una voce da rivedere, limita fortemente l'utente.
+
+	Definisci prima categoria e store per limitare i prodotti.
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--00FFFF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	> Queta voce fa parte di un set di richieste del Dottor Del Vecchio il quale, alla pratica, vorrebbe affinare ogni select affinchè queste diano e cerchino solo il materiale prettamente inerente l'una all'altra selezione. <br> E' una soluzione sull'UXD del tutto sperimentale per via della scarsa fattibilità lato [backend] ed [API] (rischio cicli ricorsivi e enorme dispendio di risorse)... Non è detto che sia fattibile, va attentamente studiata, è possibile tuttavia provare.
+
+	Limita i risultati nelle modali al diretto correlato (se hai selezionato "marcadente" non mettere le categorie dove non è presente ne i brand non collegati). Per essere ancora più precisi la richiesta è stata:<br><br>
+	_Visualizza solo brand e store legati alla categoria selezionata (apri select e non visualizzare... )_<br>
+	_Visualizza solo brand presenti in quello store selezionato (apri select e non visualizzare... )_<br><br>
+	In entrambi i casi è altamente probabile entrare in cicli ricorsivi o di infattibilità.
+
+
+
+<br>
+
+#### ⚊ allarme per ricerca duplicati indipendenti dal nome
+
+- 	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--00FFFF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	> detta così è una follia, è necessaria maggiore chiareza da parte di Kristi
+
+	verificare se è fattibile comprendere se esiste già un prodotto identico a quello che sto costruendo;
+
+-	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--00FFFF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	constrollare se esistana lato [backend] e, letteralmente, creare uno [script] per il controllo dublicati al salvataggio di un nuovo codice prodotto;
+
+
+
+<br>
+
+#### ⚊ Aggiungi campo "Titolo completo"
+
+> forse si può usare quello seo? va fatto un check
+
+-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--00FFFF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	Si necessita l'aggiungere di una sezione,utile alla compilazione e alla ricerca, che si basi su un concept di titolatura estesa (tipo grande sottotitolo esplicativo del prodotto trattato da poter visualizzare in modalità lista)_
+
+
+
+<br>
+
+#### ⚊ [script]ing e [js] seexor main classes
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	Centralizzare/Ottimizzare ogni sotto funzione nella main class
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	Va aggiornata tutta la gestione in classi
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	Pesante ottimizzazione dei vari processi
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	finire logica logica [try/cath]
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	check ed aggiornameto classe di gestione [API];
+
+
+
+<br>
+
+#### ⚊ aprendo una categoria restituisci subito tutti gli articoli
+
+-	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	Ottimizza la pagina restituendo i primi N articoli di quella categoria qualora non esistensse in sessione una ricerca in corso
+
+
+
+<br>
+
+#### ⚊ Migliorie sul tema e l'esperienza utente
+
+> molte migliorie e stile del tema sono da rimandare a prossime versioni delle ui
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	modalità lista su [front-office] _risultati di ricerca estesi ed in stile subito.it_
+
+-	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	implementare alcune migliorie tra registrazione e pagine informative (es leziosismi e grafiche varie)
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	aggiungi "reset filtri" sulla ricerca
+
+-	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	alleggerire il tema con delle piccole migliorie
+
+-	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	direct ok click sulle select (da aggiungere a versione ui 2.8 o 2.9)x
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/completed-06/21-green.svg)]()<br>
+	costruire un sistema di maggiore efficienza per l'accesso al [front-office] (stile: "Loginbox ovunque")
+
+
+<br>
+
+#### ⚊ FIX: CHROME: File download appare vuoto
+
+-	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	E' un [bug] noto da risolvere
+
+
+
+<br>
+
+#### ⚊ Memorizza quale account ha cliccato su uno dei link di resoconto (link acquisto prodotto e brand)
+-	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--00FFFF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+  	la visione è già registrata, ma non sappiamo quale utente lo fa.
+
+
+<br>
+
+#### ⚊ costruire report di tutte le visioni x singolo venditore
+-	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--00FFFF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	Abbiamo i click sul venditore e prodotto. Va stabilito meglio cosa si vorrebbe nel report e come.<br>
+	Ad occhio sarebbe conveniente stampare in video (ed usare una plugin per il print html>pdf) dei dati in uso (o da aggiungere) come:
+	- Quantità di articoli presenti
+	- Quantità di click sul brand totali (visite)
+	- Quantità di click sul brand selettivi (ip unico)
+	- Quantità di click sui prodotti di quel brand
+
+	nota a margine:
+	.... su eventuali dashboard clienti:
+	- Quali dei miei articoli è più visto?
+	- Quali dei miei articoli è più cliccato?
+	- A che prezzo la concorrenza mette il mio stesso prodotto?
+	- Applica un offerta a chi acquista da questo prodotto
+	- Mettimi in evidenza questo prodotto specifico
+	- Mettimi in evidenza
+
+
+<br>
+
+#### ⚊ tracciamento staff in [back-office]
+-	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--00FFFF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	pannello ed analisi dello staff di base che comprenda
+	- primo accesso
+	- ultimo accesso
+	- ore lavoro oggi
+	- ore lavoro oggi
+	- status online
+	- status automatico attivo/pausa
+	- note eventuali (tipo, dal 12 al 16 è in ferie)
+	- quantità prodotti oggi
+	- quantità prodotti mensile
+
+-	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--00FFFF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	> sulla ricerca prodotti in [back-office]
+
+	Chi ha creato/moddato questo prodotto?
+
+
+<br>
+
+#### ⚊ [freeze] gestione tag migliorata
+-	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--00FFFF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	costruire una gestione tag con remove
+
+
+<br>
+
+#### ⚊ [freeze] editor di testo potenziato
+> richiesto da kristi: modifiche ai testi e dei caratteri ( grassetto, colore)  (credo esista già, rientra nel progetto textEdit)
+
+-	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+  	è già presa da quill, tuttavia è parte del progetto textEdit ed incide su probabili &lt;strong&gt; della seo<br>
+	_note: non sembra necessario, inficia sulle prestazioni, rischio limite kb in inivio sul salvataggio_
+
+
+<br>
+
+#### ⚊ nuovo slogan breve
+> proposta Alberto
+
+-	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+ 	cambiare in "cerca, trova, compara"
+
+
+<br>
+
+#### ⚊ modifica del logo “seexor” in “see (sopra) e xor” (sotto)
+> proposta dal Dottor Del Vecchio
+
+-	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+ 	> è da pianificare e pensare meglio;
+	> accetta richiesta a nuova prototipazione basata su restyling;
+
+
+<br>
+
+#### ⚊ [Freeze] espandi seexor a nuovi dettagli
+> attenzione: Attualmente in sospeso per pianificazione accurata<br>
+> questa cosa andrebbe gestita e sviluppata pianificando con più accortezza vetrine/prodotti-prodotto nelle sue proprietà<br>
+
+- 	vetrina delle offerte (basate su cosa?)
+- 	possibilita’ di mettere in evidenza alcuni prodotti di alcuni venditori
+- 	disponibilita’
+    	A aggiungere proprietà dei singoli prodotti per venditore ( disponibilita’ immediata, disponibile su ordinazione, non disponibile)
+    	B ricerca per disponibilita’
+- 	tempi di consegna (fattibile solo come label per venditori )
+- 	prezzo della spedizione (fattibile solo come label per venditori)
+- 	prezzo per unita’ di misura o al pezzo ( Gr., Ml., PZ.) (da pianificare e comprendere)
+- 	Affinare la ricerca nel miglior modo anche per brand (cioè?)
+
+
+<br>
+
+#### ⚊ database [json] export
+-	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--00FFFF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	fattibile : esportare db per nuove eventuali logiche via [js]
+
+
+<br>
+
+#### ⚊ da pianificare
+> Sono miglioramenti e re-checks con priorità non definita_
+
+-	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	salvataggio descrizione varianti sempre uguale
+
+- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	shop.product.new.php -> selezione  categoria rimane rosso
+
+-	[![](https://img.shields.io/badge/--FF00FF.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	shop.product.new.php -> selezione  store/distr rimane rosso
+
+-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--00F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	Preso da "🔸 fix: prodotti suggeriti senza alcuna logica".<br>
+    	Il sistema necessita di miglioramenti sulla logica di estrazione dei prodotti suggeriti.
+   	A product.php suggeriti ? che criterio?
+        	è riferita ad una chiamata custom tratta da productsearch: ApiGateway::SearchProduct(0,12,0,$data_Tags,'','','');
+	B dopo ricerca suggeriti ? che criterio?
+        	è riferita ad una chiamata reale dei suggeriti: "product/suggestion/?id=$id"
+	i prodotti suggeriti sono l'equivalente di <pre>
+
+	$searchsuggest = ApiGateway::SearchProduct(
+			0,                // int $pIndex = 0,
+			12,               // int $pSize = 100,
+			1,                // bool $andCondition = true,
+			'',//$data_Tags   // ?string $listOfTags = null,
+			'',               //?string $criteria = null,
+			'',               //?string $family = null,
+			'',               //?string $line = null,
+			'',               //?string $supplierCode = null,
+			null,             //?int $minPrice = null,
+			null,             //?int $maxPrice = null,
+			null,             //?int $minStars = null,
+			'id',               //?string $orderBy = null,
+			null,             //?int $orderDesc = null,
+			0,                //bool $matchCase = false,
+			'',               //string $listOfBrands = "",
+			'',               //string $listOfStores = "",
+			$PCatId,          //string $listOfCategories = "",
+			1                 //bool $showEnabled = true
+	); usleep($short); </pre>
+			forse il problema che "andCondition" deve essere true per la categoria e false per i tags. Cioè "più o meno quei tag ma solo ed esclusivamente in quella categoria per certo, oppure tutti di quella categoria"
+
+
+<br>
+
+#### ⚊ [freeze][ultima priorità] storici
+
+> vedi anche: costruire report
+> a differenza dei "report" dedicati alle "aziende clienti", qui si tratta di elencare le diverse azioni degli utenti al fine di un aiuto via tikets (sezione non presente in seexor e dunque non è attualmete considerati una reale priorità)
+
+
+<br>
+
+#### ⚊ [freeze][ultima priorità] migliorie su "crea e modifica"
+> richiesto da kristi. Solo post aggiornamento in main class;
+
+-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--00F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	varianti: Clona a partire da questo prodotto
+
+-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
+	[![](https://img.shields.io/badge/--00F1F1.svg)]()
+	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
+	apri prodotto > parti da questo per un prodotto completamente nuovo
+
+---
+
+
+#### ⚊ seexor V3
+-	traduzione a full [js] ( meglio prima sperimentazione su fragments)
+-	traduzione a full [js] ( attesa fine sviluppo kimera 2.9 o Visor )
+
+---
+
+
+#### ⚊ E-COMMERCE / FUTURO ≛ ⇔ criteri di scelta per la pubblicazione dei prodotti:
+> mero appunto tecnico:
+- 	per conformità denominativa e del codice produttore (cosa significa?)
+- 	per presenza del prodotto in magazzino
+- 	per tempi di consegna
+- 	per costo spedizione
+- 	per prezzo
+
+
+
+[ftp]:https://en.wikipedia.org/wiki/File_Transfer_Protocol
+[server]:https://it.wikipedia.org/wiki/Server_web
+[localhost]:https://en.wikipedia.org/wiki/Localhost
+[patch]:https://it.wikipedia.org/wiki/Patch
+[update]:https://it.wikipedia.org/wiki/Patch
+[upgrade]:https://it.wikipedia.org/wiki/Patch
+[php]:https://it.wikipedia.org/wiki/PHP
+[frontend]:https://it.wikipedia.org/wiki/Front-end_e_back-end
+[backend]:https://it.wikipedia.org/wiki/Front-end_e_back-end
+[back-office]:https://it.wikipedia.org/wiki/Back_office
+[front-office]:https://it.wikipedia.org/wiki/Front_office
+[API]:https://it.wikipedia.org/wiki/Application_programming_interface
+[history-back]:https://developer.mozilla.org/en-US/docs/Web/API/Window/history
+[try/cath]:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch
+[script]:https://it.wikipedia.org/wiki/Script
+[github]:https://github.com/
+[repo]:https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-repositories
+[bug]:https://it.wikipedia.org/wiki/Bug
+[co-guard]:https://www.co-guard.eu/
+[querystring]:https://it.wikipedia.org/wiki/Query_string
+[SEM]:https://it.wikipedia.org/wiki/Search_engine_marketing
+[SEO]:https://it.wikipedia.org/wiki/Ottimizzazione_per_i_motori_di_ricerca
+[SMO]:https://it.wikipedia.org/wiki/Social_media_optimization
+[SHARING]:https://moz.com/blog/meta-data-templates-123
+[json]:https://it.wikipedia.org/wiki/JavaScript_Object_Notation
+[js]:https://it.wikipedia.org/wiki/JavaScript
+[javascript]:https://it.wikipedia.org/wiki/JavaScript
