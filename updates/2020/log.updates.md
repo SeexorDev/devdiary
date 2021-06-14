@@ -1,40 +1,41 @@
-
+~~~
 
     _____ _____ _____ __ __ _____ _____
    |   __|   __|   __|  |  |     | __  |
    |__   |   __|   __|-   -|  |  |    -|
    |_____|_____|_____|__|__|_____|__|__|
 
-                              dev diary
+    development on project opening
+    birth of the project 16-11-2019
 
+~~~
 
+---
 
+symbols:
 
- symbol:
- ✔️ = passed, finished
- 〰️ = standby
- 🔸 = bug, max priority
- 🔥 = under work, max priority
- ➖ = next question or step
- ✖️ = excluded, not to do
- ➕ = next full step
- ... = wainting for
+✔️ = passed, finished<br>
+〰️ = standby<br>
+🔸 = bug, max priority<br>
+🔥 = under work, max priority<br>
+➖ = next question or step<br>
+✖️ = excluded, not to do<br>
+➕ = next full step<br>
+... = wainting for<br>
 
- labels:
-  > todo   (cose fatte o da fare)
-  > fix    (errore riscontrato)
-  > fix/up (errore o richiesta di miglioramento)
-  > check  (da controllare prima )
-  > info   (cose da chiedere)
+> todo   (cose fatte o da fare)<br>
+> fix    (errore riscontrato)<br>
+> fix/up (errore o richiesta di miglioramento)<br>
+> check  (da controllare prima )<br>
+> info   (cose da chiedere)
 
+<br>
 
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+-------------------------------------------------------------
 
 Works Report : DESIGN
 
-
- FIGMAPROJECT: https://www.figma.com/file/edEsvSdtVTl0fmhjQN9CHj/seexor-project?node-id=2%3A67
+FIGMAPROJECT: https://www.figma.com/file/edEsvSdtVTl0fmhjQN9CHj/seexor-project?node-id=2%3A67
 
 
  Parte 01:
@@ -53,8 +54,8 @@ Works Report : DESIGN
    - 〰️ fix/up: dovrà essere ridisegnata al termine dei lavori
 
 
+-------------------------------------------------------------
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Works Report : WEBSITE FRONT
 
@@ -128,8 +129,8 @@ Works Report : WEBSITE FRONT
 - ✔️ rilascio delle demo interattive
 
 
+-------------------------------------------------------------
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Works Report : WEBSITE BACK (ADMIN PANEL)
 
@@ -252,8 +253,8 @@ sezione shop:
 - ✔️ todo:   shop.tags.taglist.php è fatta
 
 
+-------------------------------------------------------------
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Works Report : API TO SITE
 
@@ -421,19 +422,16 @@ Works Report : API TO SITE
 
 
 
-
- - ⭕ todo:    Spostamento API e DB -> Termine dei lavori
-
-
-// FINE LAVORI
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
+-------------------------------------------------------------
+END OF WORKS // FINE LAVORI
 
 
 ---
 
 spostato a prossimi aggiornamenti:
- - 🔸 fix:    prodotti suggeriti senza alcuna logica
- - ✖️ fix:    Ricerca frontoffice paginazione avanzata, filtri avanzati.
- - ✖️ todo:    Manca gestione tags (elimina questo tag, aggiorna questo tag). E' probabile che per come impostata la cosa non sia facile o possibile farlo
- - ✖️ todo:    Id unificativo per ricerca duplicati indipendenti dal nome
+
+- ⭕ todo:    Spostamento API e DB -> Termine dei lavori
+- 🔸 fix:    prodotti suggeriti senza alcuna logica
+- ✖️ fix:    Ricerca frontoffice paginazione avanzata, filtri avanzati.
+- ✖️ todo:    Manca gestione tags (elimina questo tag, aggiorna questo tag). E' probabile che per come impostata la cosa non sia facile o possibile farlo
+- ✖️ todo:    Id unificativo per ricerca duplicati indipendenti dal nome
