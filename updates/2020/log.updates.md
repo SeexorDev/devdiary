@@ -1,682 +1,439 @@
 
-# SEEXOR PROJECT DIARY
-~~~
-all updates in 2021-202X
-~~~
+
+    _____ _____ _____ __ __ _____ _____
+   |   __|   __|   __|  |  |     | __  |
+   |__   |   __|   __|-   -|  |  |    -|
+   |_____|_____|_____|__|__|_____|__|__|
+
+                              dev diary
+
+
+
+
+ symbol:
+ ✔️ = passed, finished
+ 〰️ = standby
+ 🔸 = bug, max priority
+ 🔥 = under work, max priority
+ ➖ = next question or step
+ ✖️ = excluded, not to do
+ ➕ = next full step
+ ... = wainting for
+
+ labels:
+  > todo   (cose fatte o da fare)
+  > fix    (errore riscontrato)
+  > fix/up (errore o richiesta di miglioramento)
+  > check  (da controllare prima )
+  > info   (cose da chiedere)
+
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Works Report : DESIGN
+
+
+ FIGMAPROJECT: https://www.figma.com/file/edEsvSdtVTl0fmhjQN9CHj/seexor-project?node-id=2%3A67
+
+
+ Parte 01:
+
+ - ✔️ todo:  realizzazione logo e dimostrativo sociale
+ - ✔️ todo:  realizzazione test stilistici
+
+ Parte 02:
+
+ - ✔️ todo:  realizzazione design frontoffice
+ - ✔️ todo:  realizzazione design backoffice
+
+ Parte 03:
+
+- ✔️ todo:  architettura del software
+   - 〰️ fix/up: dovrà essere ridisegnata al termine dei lavori
+
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Works Report : WEBSITE FRONT
+
+
+ - ✔️ todo:   realizzazione pagine statiche
+
+     - ✔️ gdpr role + cockies system
+        - ✔️ privacyandroles.php
+        - ✔️ fix: manca "php" al link (privacyandroles.php)
+          - ✔️ privacyandroles.php > Regolemento del sito e dei servizi
+          - ✔️ privacyandroles.php > Shop e acquisti
+          - ✔️ privacyandroles.php > GDPR, Privacy & Cookies
+          - ➖ privacyandroles.php > Domande frequenti
+
+     - ✔️ login.php
+     - ✔️ accountlost.php
+        - 〰️ fix: Undefined offset: 1 in C:\Server-web\host\Seexor\accountlost.php on line 27
+     - ➗ accountreset.php
+     - ✔️ newaccount.php
+        - ✔️ GDPR VALIDATE newaccount.autocheck.php
+        - ✔️ GDPR VALIDATE newaccount.manualcheck.php
+        - ✔️ GDPR VALIDATE newaccount.success.php
+
+     - ✔️ myprofile.php
+        - ✔️ whishlist.php
+
+     - ✔️ contact.php
+        - ➗ fix: GetLibs not found, il modulo esiste ma va aggiornato il percorso
+
+     - ✔️ index.php
+        - ✔️ todo: call per prodotti
+        - ✔️ todo: splitter (quantità per pagina)
+        - ✔️ todo: lista prodotti suggeriti
+        - ✔️ todo: paginazione
+
+     - ✔️ home.php
+        - ✔️ todo: call per prodotti
+        - ✔️ todo: splitter (quantità per pagina)
+        - ✔️ todo: splitter (più economico, più caro, votato, recente)
+        - ✔️ todo: sidebar (articoli per..., prezzo, tipologia, brand)
+        - ✔️ todo: box prodotti suggeriti
+        - ✔️ todo: box categorie suggerite
+        - ✔️ todo: paginazione
+
+     - ✔️ weare.php
+
+     - ✔️ howto.php
+
+     - ✔️ categorylist.php
+        - ✔️ category.php
+           - ✔️ todo: call per prodotti per questa categoria
+           - ✔️ todo: splitter (quantità per pagina)
+           - ✔️ todo: splitter (più economico, più caro, votato, recente)
+           - ✔️ todo: sidebar (articoli per..., prezzo, tipologia, brand)
+
+     - ✔️ product.php
+        - ✔️ todo: Gallery
+        - ✔️ todo: Titolo
+        - ✔️ todo: Sottotitolo <-> con Codice prodotto e categoria
+        - ✔️ todo: Descrizione
+        - ✔️ todo: Linkbox (brand and store)
+        - ✔️ todo: prodotti simili
+        - ✔️ todo: Informazioni prodotto (Desc,scheda,particolari,file)
+        - ✔️ todo: Valutazioni utenti
+        - ✔️ todo: Modulo: La tua recensione
+
+     - ✖️ product.php > allvalutations.php
+
+     - ✔️ sessionoff.php
+
+- ✔️ rilascio delle demo interattive
+
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Works Report : WEBSITE BACK (ADMIN PANEL)
+
+
+ - ✔️ todo:   index.php con login
+
+ - ✔️ todo:   dashboard.php
+
+
+ sezione staff
+
+ - ✔️ todo:   staff.myprofile.php
+
+ - ✔️ todo:   staff.search.php
+               con: ✔ nome, ✔ cognome, ✔ email, ✔ per qualifica
+                    ✔ per pagina, ✔ commons actions (sospendi,abilita,convalida,elimina)
+
+ - ✔️ todo:   staff.edit.php
+    - ✔️ form modifiche profilo
+            con: % immagine profilo, ✔ resetta immagine profilo
+                 ✔ nome, ✔ cognome, ✔ codice fiscale, ✔ data di nascita, ✔ aggiorna password
+                 ✔ zona di residenza, ✔ qualifica, ✔ mail di accesso, ✔ telefono, ✔ link,
+                 ✘ eliminato per richiesta: documento aggiorna documento elimina documento
+    - ✔️ forms sidebar
+             con: % sospendi, % elimina, % reset, % contatta
+
+ - ✔️ todo:   staff.new.php
+
+
+ sezione users
+
+ - ✔️ todo:   users.search.php
+               con: ✔ nome, ✔ cognome, ✔ email, ✔ per qualifica, ✔ codice fiscale
+                    ✔ N° ordine/albo, ✔ per Id, ✔ per split (convalidati,da convalidare,sospesi),
+                    ✔ per pagina, ✔ commons actions (sospendi,abilita,convalida,elimina)
+
+ - ✔️ todo:   users.new.php
+               con: ✔ nome, ✔ cognome, ✔ data di nascita, ✔ codice fiscale, ✔ telefono, ✔link,
+                    ✔ email, ✔ pec, ✔ordine/albo, ✔tipo ordine/albo, ✔albo zona, ✔albo umero,
+                    ✘ eliminato per richiesta: documento aggiorna documento elimina documento
+
+ - ✔️ todo:   users.edit.php
+    - ✔️ form modifiche profilo
+                con: ✔ img profilo, ✔ reinvia nuova img, ✔ approva img , ✔ rigetta img
+                     ✔ nome, ✔ cognome, ✔ codice fiscale, ✔ data di nascita, ✔ aggiorna password
+                     ✔ zona di residenza, ✔ qualifica (solo lvl<3), ✔ mail di accesso, ✔ telefono, ✔ link,
+                     ✔ordine/albo, ✔tipo ordine/albo, ✔albo zona, ✔albo umero,
+                     ✘ eliminato per richiesta: documento aggiorna documento elimina documento
+    - ✔️ forms sidebar
+                con: % convalida, % sospendi, % elimina, % reset, % contatta
+    - ✔️ link a reviews utente
+
+ - ✔️ todo:   users.edit.php
+
+
+sezione brands e store:
+
+- ✔️ todo:   brands.search.php
+              con: ✔ nome del brand, ✔ id, ✔ tag, ✔ solo flag, ✔ per split (convalidati, da convalidare, sospesi),
+                   ✔ per pagina, ✔ commons actions (sospendi,abilita,convalida,elimina)
+
+- ✔️ fix/up: brands.edit.php (pagina aggiornata)
+              note upgrade: tabs solo per flag + tabs solo brand (fabbrica o store) + con brand+store
+    - ✔️ form modifiche profilo
+              completo: % img profilo, % reinvia nuova img, % approva img , % rigetta img
+                        ✔ Questo brand ha uno store? Si/No,
+                        ✔ ragione sociale, ✔ p.iva, ✔ mail di accesso, ✔ telefono, ✔ link, ✔ tags,
+                        se professionista...
+                        ✔ nome, ✔ cognome, ✔ codice fiscale, ✔ data di nascita,
+                        ✔ zona di residenza, ✔ordine/albo, ✔tipo ordine/albo, ✔albo zona, ✔albo umero,
+                        ✘ eliminato per richiesta: documento aggiorna documento elimina documento
+                        ✔ aggiorna password
+                        se esiste un referente...
+                        ✔ nome referente, ✔ cognome referente, ✔ email referente, ✔ telefono referente,
+              solo flag: ✔ img profilo, ✔ reinvia nuova img, ✔ approva img , ✔ rigetta img
+                         ✔ Questo brand ha uno store? Si/No,
+                         ✔ ragione sociale, ✔ link, ✔ tags
+
+    - ✔️ forms sidebar
+                 con: ✔ convalida, ✔ sospendi, ✔ elimina, ✘ reset, 🔥 contatta
+
+- ✔️ fix/up: brands.edit.php (pagina aggiornata)
+              note upgrade: tabs solo per flag + tabs solo brand (fabbrica o store) + con brand+store
+              completo: % img profilo, % reinvia nuova img, % approva img , % rigetta img
+                        ✔ Questo brand ha uno store? Si/No,
+                        ✔ ragione sociale, ✔ p.iva, ✔ mail di accesso, ✔ telefono, ✔ link, ✔ tags,
+                        se professionista...
+                        ✔ nome, ✔ cognome, ✔ codice fiscale, ✔ data di nascita,
+                        ✔ zona di residenza, ✔ordine/albo, ✔tipo ordine/albo, ✔albo zona, ✔albo umero,
+                        ✘ eliminato per richiesta: documento aggiorna documento elimina documento
+                        ✔ aggiorna password
+                        se esiste un referente...
+                        ✔ nome referente, ✔ cognome referente, ✔ email referente, ✔ telefono referente,
+              solo flag: ✔ img profilo, ✔ reinvia nuova img, ✔ approva img , ✔ rigetta img
+                         ✔ Questo brand ha uno store? Si/No,
+                         ✔ ragione sociale, ✔ link, ✔ tags
+
+
+sezione shop:
+
+- ✔️ todo:   shop.search.php
+                 con: ✔ nome prodotto, ✔ id, ✔ in cagetoria (selezione multipla);
+                      ✔ per pagina, ✔ commons actions (abilita,elimina)
+              result: ✔ Id, ✔ titolo, ✔ descizione, ✔ visibilità, ✔ prezzo, ✔ stars, ✔ clicks
+
+- ✔️ todo:   shop.product.edit.php
+
+- ✔️ todo:   shop.product.variants.php
+
+- ✔️ todo:   shop.product.comments.php (da rivedere per miglioramenti sul layout...)
+
+- ✔️ todo:   shop.codes.search.php
+
+- ✔️ todo:   shop.categories.php
+                 con: ✔ modifica questa categoria, ✔ crea sotto categoria, ✔ crea categoria base
+
+
+- ✔️ todo:   shop.tags.php (stabile su versione classica)
+
+- ✔️ todo:   shop.tags.taglist.php è fatta
+
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Works Report : API TO SITE
+
+
+ - ✔️ todo:   realizzazione gateway (da api a website)
+ - ✔️ todo:   collaudo endpoint registrazione
+ - ✔️ todo:   collaudo endpoint utenza
+ - ✔️ todo:   collaudo endpoint recuperi
+ - ✔️ todo:   gateway web/local
+ - ✔️ fix:    Token accesso su Authentication manca id
+ - ✔️ info:   gestione Id/role/accessi
+ - ✔️ fix:    Id lost
+ - ✔️ fix:    conversion $birthdate->format('Y-m-d')
+ - ✔️ info:   lvl utenza
+ - ✔️ fix:    mancati: adduser > ordine albo tipo zona
+ - ✔️ info:   su gateway
+ - ✔️ info:   login: securcode error
+ - ✔️ todo:   Contatto con Elisa
+ - ✔️ info:   Pindex,Psize
+ - ✔️ fix:    Cancellazione fisica dell'utente
+ - ✔️ fix:    Blocco utenti pre convalida mail
+ - ✔️ fix:    logout non funziona
+ - ✔️ todo:   completamento flusso di registrazione e login
+ - ✔️ todo:   attivazione sendGrid
+ - ✔️ info:   ValidateUser
+ - ✔️ info:   Gestione flusso in-out reg/mail/valy/access/valy
+ - ✔️ errme:  richiesta su codice regolare (demouser e non demoutente)
+ - ✔️ fix:    recupero pass, miglioramenti "conferma via mail della richiesta o chiunque può eliminare la pass di chiunque"
+ - ✔️ fix:    mod pass non è in userEdit
+ - ✔️ fix:    userEdit manca "link", "albonumber"
+ - ✔️ todo:   passaggio Sangrid attivo
+ - ✔️ todo:   collaudo endpoint utenza terminato
+ - ✔️ todo:   collaudo endpoint recuperi terminato
+ - 〰️ fix:    UserChangePasswordPostRecovery restituisce: KO
+ - ✔️ todo:   inizio collaudo endpoint amministrazione utenti
+ - ✔️ info:   da php apiGate a Js apiGate
+ - ✔️ info:   arrivo esempio file js -> coincide con le nostre api ma non funziona
+ - ✔️ info:   Richiesa codice leggibile -> negata
+ - ✔️ info:   errori lato js -> Sc mancate
+ - ✔️ errme:  errori cors/header richieste js ( vedi moduli header wamp)
+ - ✔️ fix:    mancanza paramentor Tags
+ - ✔️ info:   andcondition (vale come: "incrociata o definita")
+ - ✔️ fix/up: serchUser con paramentri vuoti = all
+ - ✔️ fix/up: update livelli utenza
+ - ✔️ fix:    isStore? isFlag? mancanti
+ - ✔️ info:   richiesti params per registrazioni flag
+ - ✔️ info:   invio screen flag/user
+ - ✔️ fix:    SearchUser e GetUser restituiscono vuoto
+ - ✔️ fix/up: aggiunto admin_validated
+ - ✔️ fix:    auto admin_validated per lo staff
+ - ✔️ fix:    non arriva mail password (erano la pagina sbagliata)
+ - ✔️ info:   nuova richiesa codice leggibile -> negata
+ - ✔️ fix:    DeleteUser e problemi generici sul Js...moduli header wamp disattivati, call non partivano.
+ - ✔️ fix:    check su stringa errato. edituser restituisce KO "same field is empty" alla registrazione di flag
+ - ✔️ fix:    edituser manca il paramentro mail
+ - ✔️ info:   categorie owner... cos'è?
+ - ✔️ fix:    [eseguito diversamente] sotto categorie e spostamento categorie
+ - ✖️ del:    categorie speciali ELIMINATO CAUSA INUTILIZZO
+ - ✔️ fix:    [risolto è 0] ApiGateway::SearchUser -> $searchlevel manca paramentro TUTTI (quindi vuoto);
+ - ✔️ fix/up: invio array per common actions
+ - ✔️ fix:    shop.search.php -> SearchProduct -> da vuoto restituisce empty array.
+ - ✔️ fix:    delete user response for :  {"Response":"KO","ErrorMessage":"Argument 1 passed to Seexor\\World\\User::Remove() must be of the type array, string given, called in /homepages/42/d591178027/htdocs/Production/Seexor/sources/Seexor/World/User.php on line 1226","HttpCode":400,"Payload":[]}
+ - ➖ info:   EditUser -> reset della mail: salvando senza modifica (quindi con $mail='') torna  il campo mail vuoto fino a convalida di quest'ultima (teoricamente dovrebbe esserci il nuovo, ma utente disabilitato).
+ - ✔️ fix:    implementazione invio mail su successo di creazione account manuale
+ - ✔️ fix:    mancano i dati "referente"
+ - ✔️ fix/up: aggiunto: ApiGateway::SendValidationMail passando come parametro userId (che ti viene fornito nel risultato della chiamata addUser)
+ - ✔️ fix/up: aggiunta al frontend di SendValidationMail
+ - ✖️ del:    Manca Get/set User profile photo.... > sostituita da funzione writeFiles
+ - ✔️ fix:    EditUser: strano problema con le date....
+ - ✔️ fix:    tutti i search escono dallo scopo e mancano le condizioni:
+               - ✔️ solo brand
+                  - ✔️ che siano flag
+                  - ✔️ che siano store
+               - ✔️ solo utenza
+               - ✔️ solo staff
+               - ✔️ level (1,2,3,4,...,11)
+               - ✔️ CONVALIDATI, DA CONVALIDARE, SOSPESI
+               in search product:
+               ✔️ CATEGORIE stringa (nome1,nome2,nome3)
+               ✔️ ID PRODOTTO risolto tramite uso di getProduct(ID);
+ - ✔️ info: prodotti "criteria family line" ?
+ - ✔️ info:   NewProduct: $supplier?? ( è diventato "store collegato" )
+ - ✔️ fix:    Edit/GetProduct: manca "Link produttore" (sarebbe lo store)
+ - ✔️ fix:    check: Edit/GetProduct: manca "Collega Distributore" (sarebbe la store)
+ - ✔️ fix:    check: Edit/GetProduct: manca Collega brand
+ - ✔️ fix:    Edit/GetProduct: manca Sottotilo
+ - ✔️ fix:    check: Edit/GetProduct -> PDF E INFORMATIVI
+               (ok: è AddProductAttachment,  DeleteProductAttachment)
+                -> verrà fornito da front con campo text base64)
+                -> il sistema sembra non accettare in ext la stringa base64
+                -> dov'è GetProductAttachment?
+                   -> risolto con diretta call fisica su struttura cartelle
+ - ✔️ fix:    check: Edit/GetProduct -> DETTAGLI SPECIFICI
+                -> verrà fornito da front con campo arraytext "[Val,Desc],[Val,Desc]"
+                   -> ok:  eseguito da $solor a $details)
+  - ✔️ fix:    check: Edit/GetProduct -> DETTAGLI SPECIFICI valori sballati
+                -> risolto con diretto salvataggio
+ - ✔️ info:   aggiungi/rimuovi variante?
+ - ✔️ todo:   rimuovi prodotto
+      ✔️ info:   aggiungi/rimuovi file?
+         ✔️ todo:   rimuovi attachs
+         ✔️ todo:   rimuovi gallery
+ - ✔️ info:   AddProductScore cos'è'? => è la valutazione
+ - ✔️ info:   $suggest = prodotti suggeriti in base ad un prodotto
+ - ✔️ fix:    AddProductCategory
+                 ✔️ owner null non passa e non passa 0 per le main category.
+                 ✔️ conveniente è mettere 0 come base di ogni main category.
+ - ✔️ fix:    Add/EditProductCategory -> manca descrizione, immagine, vibilità
+ - ✔️ fix:    Problemi di sessione, accesso e server. Risolti.
+ - ✔️ fix:    Problemi di login, accesso e server. Risolti.
+ - ✔️ fix:    EditCategoryAssociated -> "Category": false invece che lista ID di categorie
+ - ✔️ fix:    EditProduct -> check su tags inseriti: "Tags": "aaa,,aaa,,aaa,,aaa,,aaa,,aaa,,aaa,,aaa,,aaa,",
+ - ✔️ fix:    Errori generici sulle common actions: da dettagliare
+ - ✔️ fix:    SearchUsers not working -> restituiscono utenti admin, brands e flags
+ - ✔️ fix:    SearchBrands not working -> i valori di ricerca non vengono rispettati
+ - ✔️ fix:    DeleteProduct not working -> restituisce OK ma non ha cancellato
+
+ - ✔️ fix:    Mail send not working: aggiorna password e tutto ciò che dipende dalla mail resta bloccato
+
+ - ✔️ fix:    ApiGateway::GetReviewsFromProduct($pId); loop restituisce = "Response": "KO", "ErrorMessage": "An exception of type TeamIcon\\Exceptions\\CustomException occoured with these error message: Update expiration date failed for sc 8kUAqu7H8VnHV8m4jYiikyCzFD9AFftfpfQO3zGG", "HttpCode": 400,
+ - ✔️ fix:    ApiGateway::GetProductCross($pId); loop restituisce = "Response": "KO", "ErrorMessage": "An exception of type TeamIcon\\Exceptions\\CustomException occoured with these error message: Update expiration date failed for sc 8kUAqu7H8VnHV8m4jYiikyCzFD9AFftfpfQO3zGG", "HttpCode": 400,
+ - ✔️ todo:   product reviews
+              ✔️ DELETE -> An exception of type TeamIcon\\Exceptions\\CustomException occoured with these error message: Query is not a valid select statement
+              ✔️ PATCH SALVA-> An exception of type TeamIcon\\Database\\DbException occoured with these error message: In World database throw an exception occured when I've tryed to execute query: UPDATE product_review SET product = ?, opinion = ? WHERE user = ?, The creation of statement is failed with db error Duplicate entry '202-493' for key 'PRIMARY' and stmt Duplicate entry '202-493' for key 'PRIMARY' and connection error n.d.
+              ✔️ PATCH APPROVA DISABILITA
+
+ - ✔️ todo:    user whislists
+ - ✖️ todo:    user reviews > verrà integrata più avanti.
+
+ - ✔️ todo:    ultima parte: rettifica del lato clienti (ricollega nuove chiamate, ottimizzazione lineare)
+ - ✔️ fix:     impaginazione dei prodotti > Elisa ha risolto.
+ - ✔️ todo:    blocco dell'invio + aggiungi alert ad elimina prodotto
+ - ✔️ fix:     Aggingi standard su dettagli o si blocca! > corretto direttamente da loop
+ - ✔️ fix/up:  svincolo il codice prodotto dalla variante. > eseguito e testato.
+ - ✔️ fix/up:  conserva radice dello store ulle varianti > eseguito
+ - ✔️ todo:    Abbellire la ricerca + codice produzione (forse distributore > testato, troppo pesante)
+ - ✔️ todo:    rettifica definitiva ricerca staff > ricerca perfetta
+ - ✔️ todo:    rettifica definitiva ricerca brand
+ - ✔️ fix:     rettifica definitiva ricerca user
+ - ✔️ fix:     modifica immagine categoria > sembra risolto.
+ - ✔️ todo:    ultima parte: lato admins: blocco indicizzazione
+ - ✔️ todo:    ultima parte: lato clienti: prime integrazioni indicizzazione
+ - ✔️ todo:    ultima parte: lato clienti: pagina prodotti
+ - ✔️ todo:    ultima parte: miglioramenti ai commenti utenti
+ - ✔️ fix:     newaccount.success.php > metti "LOGIN PER STAFF"
+ - ✔️ todo:    product statistics values (views/clicks)
+ - ✔️ todo:    risolto: product search con spazi
+ - ✔️ fix:     Dopo cancella staff ti porta al cerca utenti
+ - ✔️ fix:     DELETE STAFF-> Come in user da il falso positivo sull'eliminazione.
+ - ✔️ fix:     DELETE PRODUCTS-> Come in user da il falso positivo sull'eliminazione.
+ - ✔️ fix:     MISTERO >> SU UNA V DI CHROME NON FUNZIONA IL LOGOUT (ma a me si... cosa succede?)
+ - ✔️ todo:    RICERCHE BACKOFFICE -> Risolto.
+ - ✔️ fix/up:  Immagine profilo utenti: manca come reperire lo status di approvazione/rigetto
+ - ✔️ fix:     collegamento ultime mail + manca la parte messaggi al delete,disable,contact su user, brand ecc.
+                mio: preparo dei messaggi standard per le common actions e manca da collegare quelli per decisione ponderata con motivazione.
+ - ✔️ fix/up:  RICERCHE FRONTOFFICE
+                -> Secondo me va fatta una chiamata a parte dove inseriremo la questione filtri avanzati (ancora da fare)
+                -> in ricerca (front office): Solo la variante più economica! Suggerisco nuova chiamata
+                -> Se non erro è stato fatto ma chiedo conferma. Stato dei prodotti attiva/disattivo per non mostrarli in chiamata frontoffice
+ - ✔️ todo:    ultimare Dashboard
+ - ✔️ todo:    ultimare frontoffice (aggiornare pagina categorie)
+ - ✔️ fix:    invio messaggio utente: User 311 not found - l'utente esite.
+ - ✔️ fix:    checks mail system non funzionano
+ - ✔️ fix:    forms sidebar con: % convalida, % sospendi, % elimina, % reset, % contatta.
+
+
+
+
+ - ⭕ todo:    Spostamento API e DB -> Termine dei lavori
+
+
+// FINE LAVORI
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 
 ---
 
-
-
-<br>
-
-#### ⚊ from full [ftp] to [localhost]
-
--	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--00FFFF.svg)]()
-	[![](https://img.shields.io/badge/completed-06/21-green.svg)]()<br>
-	> Passaggio intermedio di stop [ftp].<br>
-	In estrama sintesi: viene costruita una copia di seexor.com su dei computer con un [server] fittizio che funziona su dei computer aziendali (vedi [localhost]) per lavorare agli [update] (ve anche [patch]) senza compromettere direttamente il sito reale.
-
-<br>
-
-#### ⚊ service.php upgrade + path roles
-
--	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/completed-06/21-green.svg)]()<br>
-	> Il file service.php garantisce il recupero della quasi totalità delle risorse del sito, ad esempio ogni immagine o url interno. Tra i suoi compiti, difatti, c'è l'analisi dei percorsi dei file del sito all'interno del [server].
-
-	aggiornamento [php] service del [frontend] [migliorato direttamente a V4].
-
--	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/completed-06/21-green.svg)]()<br>
-	> Rappresenta, in estram sintesi, l'aggiornamento di tutti i file del sito collegati al punto precedente.
-
-	aggiornamento e ricollegamento percorsi e delle nomenclature
-
-
-
-<br>
-
-#### ⚊ test versione [try/cath] su [API]
-
--	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/initialized-06/21-orange.svg)]()<br>
-	> 	Allo stato attuale è attivo con in corso di test sulla sezione in home del [front-office].<br>
-		Non è attivo su altre [API] call [script].<br>
-		In estrema sintesi può essere visto come un "bypass preventivo". Questa procedura informatica (in codice) garantisce un approccio in grado di restituire un valore di "Fallimento" -altrimenti impossibile da ottenere- qualora le [API] dovessero bloccarsi per un malfunzionamento tra [front e backend] ed evitando il crash (blocco totale) della pagina.
-
-
-
-<br>
-
-#### ⚊ Cambiare da seexor s.r.l. a medixor s.r.l.
-> richiesta del Dottor Del Vecchio
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/completed-06/21-green.svg)]()<br>
-	Aggiorna nome e referenze su tutte le pagine
-
-
-
-<br>
-
-#### ⚊ Loginbox ovunque ([back-office])
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/completed-06/21-green.svg)]()<br>
-	> Costruire un sistema di maggiore efficienza per l'accesso dando la possibilità agli amministratori di entrare nel sito da qualsiasi parte del [back-office].
-
-
-
-
-<br>
-
-#### ⚊ passare da [ftp] a [localhost]/[github]
-
--	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--00FFFF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	> è necesassario l'ausilio dello staff di [backend] per lo spostamento del database<br>
-	ristrutturare [repo] e [github]
-	caricare e collegare [repo] [github]
-	fermare gli [update] via [ftp]
-
-
-
-<br>
-
-#### ⚊ sessione e [history-back] fails
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	> è sperimentale e riguarda esclusivamente il [front-office]. Esiste la necessità di affrontare 3 punti che non vengono storicizzati durante la navigazione utente:
-
-	A Nelle ricerche deve conservare la [querystring]
-	<br> > ...questo però comporta un controllo aggiuntivo sui filtri? E' dunque fattibile? <br>
-	B La navigazione dovrebbe conservare da dove e cosa
-	<br> > ...Si, ma stabilito in che senso e cosa deve conservare... Serve ricostruire dei casi d'uso. <br>
-	C "aggiorna" dalla ricerca porta a pagina principale
-	<br> > ...probabile [bug] <br>
-
-
-
-<br>
-
-#### ⚊ implementazione co-guard
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--00FFFF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	sia per l'aggiornamento prodotti che per l'eliminazione automatica [co-guard]
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--00FFFF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	Aggiungi "prodotto non più online" tramite codice o [API] di [co-guard]
-
-
-
-
-<br>
-
-#### ⚊ Distinguere case produttrici da venditori
-> richiesta del Dottore Del Vecchio
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--00FFFF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	Serve una flag "produttore" oltre la flag store
-
-
-
-<br>
-
-#### ⚊ [SEO]: strutturale -> part 1 of 2
-
-> tema e [frontend], no management [backend]). <br> realizzazione di tutte le strutture html per una corretta indicizzazione organica
-
--	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	apertura di ogni canale Google e ufficialmente al pubblico
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	Costruzione implementazione [script] sitemap
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	analisi, meta e strutture, articoli, aeria tags, potenziale altro
-
-
-
-
-<br>
-
-#### ⚊ [SEO]: strutturale -> part 2 of 2
-> management via [back-office], non dovrebbe essere necessario lo staff di [backend])
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	Implementare un sistema di suggerimenti tra i pannelli del [back-office]
-	++ Se possibile: aggiungere criteri e controlli del sito in generale (pannello [SEO])
-	++ Se possibile: aggiungere criteri e controlli su crea/mod prodotti
-
-
-
-
-<br>
-
-#### ⚊ [SEO]: strumenti per [SMO] e [SHARING]
-> lato tema e [frontend], no management [backend])_
-> è consigliabile attendere ui 2.9 o superiore
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	[front-office]: automatismi per sharing e [SMO]
-
-
-
-<br>
-
-#### ⚊ [SEO]: [freeze] [SEO] [backend])
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--00FFFF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	A [back-office]: implementazione per il salvataggio di elementi customizzati ai fini [SHARING], [SEO], [SEM] o [SMO]<br>
-    	B [back-office]: se possibile: aggiungere criteri e controlli per la [SEO] su crea/mod prodotti<br>
-    	C [back-office]: aggiungere criteri e controlli per la [SHARING] e [SMO] su crea/mod prodotti<br>
-
-
-
-
-<br>
-
-#### ⚊ Aggiungi "BrandLabel" (no brand) su prodotto
-> richiesto da kristi per facilitare il lavoro
-> kristi ha richisto anche "Chi ha creato/moddato questo prodotto?" fattibile seguendo le voci più avanti
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--00FFFF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	Sui risultati di ricerca prodotto, nella linea di prodotto, in [back-office]: Nome brand di questo prodotto;
-
-
-
-<br>
-
-#### ⚊ [API]:
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--00FFFF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	Stop non restuful [API]!<br>
-	Invio e ricezione è solo GET e POST, solo [json]!
-	A Ogni sended deve essere un [json];
-	B Ogni getted deve essere un [json];
-
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--00FFFF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	linear parameters<br>
-	> E' necessaria di una linearizzazione dei params attualmente non definibile su tutte le chiamate.<br>e nelle chiamate...
-	<br>
-	A Send e result sono in alcuni casi camelcase, in altri dash;
-	B Gi int necessitano di '' come "no override";
-	C le string di '' come "no override";
-	D tags solo '' come "no override";
-
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--00FFFF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	stop non restuful parse & recode<br>
-	va codificata ogni stringa con un b64 o urlEncoder, no mezzo e mezzo, no nessuna codifica.
-
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--00FFFF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	stop non restful gallery<br>
-	Lo [script] della gallery va migliorato ed inserito nel contesto [API]
-
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--00FFFF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	tag params conflict<br>
-	A i tags non fanno il parse del comma via [js], vanno inseriti con la virgola via [php] (o viceversa)
-	B se esistono i tags non viene preso la ricerca per titolo e testo parziale
-
-
-
-
-<br>
-
-#### ⚊ Miglioramenti sui pannelli categorie ([back-office])
-
-> questo materiale è in arrivo grazie alla versione 2.9 o superiore del framework ui
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	modalità assegnamento categoria drag & drop in [back-office]
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	pannello con cercare per categoria annidata lato tema
-
-
-
-
-<br>
-
-#### ⚊ Miglioramenti sulle ricerche [front-office]
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--00FFFF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	Limita risultati per la categoria specifica in cui sei
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--00FFFF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	> è una voce da rivedere, limita fortemente l'utente.
-
-	Definisci prima categoria e store per limitare i prodotti.
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--00FFFF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	> Queta voce fa parte di un set di richieste del Dottor Del Vecchio il quale, alla pratica, vorrebbe affinare ogni select affinchè queste diano e cerchino solo il materiale prettamente inerente l'una all'altra selezione. <br> E' una soluzione sull'UXD del tutto sperimentale per via della scarsa fattibilità lato [backend] ed [API] (rischio cicli ricorsivi e enorme dispendio di risorse)... Non è detto che sia fattibile, va attentamente studiata, è possibile tuttavia provare.
-
-	Limita i risultati nelle modali al diretto correlato (se hai selezionato "marcadente" non mettere le categorie dove non è presente ne i brand non collegati). Per essere ancora più precisi la richiesta è stata:<br><br>
-	_Visualizza solo brand e store legati alla categoria selezionata (apri select e non visualizzare... )_<br>
-	_Visualizza solo brand presenti in quello store selezionato (apri select e non visualizzare... )_<br><br>
-	In entrambi i casi è altamente probabile entrare in cicli ricorsivi o di infattibilità.
-
-
-
-<br>
-
-#### ⚊ allarme per ricerca duplicati indipendenti dal nome
-
-- 	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--00FFFF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	> detta così è una follia, è necessaria maggiore chiareza da parte di Kristi
-
-	verificare se è fattibile comprendere se esiste già un prodotto identico a quello che sto costruendo;
-
--	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--00FFFF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	constrollare se esistana lato [backend] e, letteralmente, creare uno [script] per il controllo dublicati al salvataggio di un nuovo codice prodotto;
-
-
-
-<br>
-
-#### ⚊ Aggiungi campo "Titolo completo"
-
-> forse si può usare quello seo? va fatto un check
-
--	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--00FFFF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	Si necessita l'aggiungere di una sezione,utile alla compilazione e alla ricerca, che si basi su un concept di titolatura estesa (tipo grande sottotitolo esplicativo del prodotto trattato da poter visualizzare in modalità lista)_
-
-
-
-<br>
-
-#### ⚊ [script]ing e [js] seexor main classes
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	Centralizzare/Ottimizzare ogni sotto funzione nella main class
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	Va aggiornata tutta la gestione in classi
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	Pesante ottimizzazione dei vari processi
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	finire logica logica [try/cath]
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	check ed aggiornameto classe di gestione [API];
-
-
-
-<br>
-
-#### ⚊ aprendo una categoria restituisci subito tutti gli articoli
-
--	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	Ottimizza la pagina restituendo i primi N articoli di quella categoria qualora non esistensse in sessione una ricerca in corso
-
-
-
-<br>
-
-#### ⚊ Migliorie sul tema e l'esperienza utente
-
-> molte migliorie e stile del tema sono da rimandare a prossime versioni delle ui
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	modalità lista su [front-office] _risultati di ricerca estesi ed in stile subito.it_
-
--	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	implementare alcune migliorie tra registrazione e pagine informative (es leziosismi e grafiche varie)
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	aggiungi "reset filtri" sulla ricerca
-
--	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	alleggerire il tema con delle piccole migliorie
-
--	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	direct ok click sulle select (da aggiungere a versione ui 2.8 o 2.9)x
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/completed-06/21-green.svg)]()<br>
-	costruire un sistema di maggiore efficienza per l'accesso al [front-office] (stile: "Loginbox ovunque")
-
-
-<br>
-
-#### ⚊ FIX: CHROME: File download appare vuoto
-
--	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	E' un [bug] noto da risolvere
-
-
-
-<br>
-
-#### ⚊ Memorizza quale account ha cliccato su uno dei link di resoconto (link acquisto prodotto e brand)
--	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--00FFFF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-  	la visione è già registrata, ma non sappiamo quale utente lo fa.
-
-
-<br>
-
-#### ⚊ costruire report di tutte le visioni x singolo venditore
--	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--00FFFF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	Abbiamo i click sul venditore e prodotto. Va stabilito meglio cosa si vorrebbe nel report e come.<br>
-	Ad occhio sarebbe conveniente stampare in video (ed usare una plugin per il print html>pdf) dei dati in uso (o da aggiungere) come:
-	- Quantità di articoli presenti
-	- Quantità di click sul brand totali (visite)
-	- Quantità di click sul brand selettivi (ip unico)
-	- Quantità di click sui prodotti di quel brand
-
-	nota a margine:
-	.... su eventuali dashboard clienti:
-	- Quali dei miei articoli è più visto?
-	- Quali dei miei articoli è più cliccato?
-	- A che prezzo la concorrenza mette il mio stesso prodotto?
-	- Applica un offerta a chi acquista da questo prodotto
-	- Mettimi in evidenza questo prodotto specifico
-	- Mettimi in evidenza
-
-
-<br>
-
-#### ⚊ tracciamento staff in [back-office]
--	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--00FFFF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	pannello ed analisi dello staff di base che comprenda
-	- primo accesso
-	- ultimo accesso
-	- ore lavoro oggi
-	- ore lavoro oggi
-	- status online
-	- status automatico attivo/pausa
-	- note eventuali (tipo, dal 12 al 16 è in ferie)
-	- quantità prodotti oggi
-	- quantità prodotti mensile
-
--	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--00FFFF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	> sulla ricerca prodotti in [back-office]
-
-	Chi ha creato/moddato questo prodotto?
-
-
-<br>
-
-#### ⚊ [freeze] gestione tag migliorata
--	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--00FFFF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	costruire una gestione tag con remove
-
-
-<br>
-
-#### ⚊ [freeze] editor di testo potenziato
-> richiesto da kristi: modifiche ai testi e dei caratteri ( grassetto, colore)  (credo esista già, rientra nel progetto textEdit)
-
--	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-  	è già presa da quill, tuttavia è parte del progetto textEdit ed incide su probabili &lt;strong&gt; della seo<br>
-	_note: non sembra necessario, inficia sulle prestazioni, rischio limite kb in inivio sul salvataggio_
-
-
-<br>
-
-#### ⚊ nuovo slogan breve
-> proposta Alberto
-
--	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
- 	cambiare in "cerca, trova, compara"
-
-
-<br>
-
-#### ⚊ modifica del logo “seexor” in “see (sopra) e xor” (sotto)
-> proposta dal Dottor Del Vecchio
-
--	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
- 	> è da pianificare e pensare meglio;
-	> accetta richiesta a nuova prototipazione basata su restyling;
-
-
-<br>
-
-#### ⚊ [Freeze] espandi seexor a nuovi dettagli
-> attenzione: Attualmente in sospeso per pianificazione accurata<br>
-> questa cosa andrebbe gestita e sviluppata pianificando con più accortezza vetrine/prodotti-prodotto nelle sue proprietà<br>
-
-- 	vetrina delle offerte (basate su cosa?)
-- 	possibilita’ di mettere in evidenza alcuni prodotti di alcuni venditori
-- 	disponibilita’
-    	A aggiungere proprietà dei singoli prodotti per venditore ( disponibilita’ immediata, disponibile su ordinazione, non disponibile)
-    	B ricerca per disponibilita’
-- 	tempi di consegna (fattibile solo come label per venditori )
-- 	prezzo della spedizione (fattibile solo come label per venditori)
-- 	prezzo per unita’ di misura o al pezzo ( Gr., Ml., PZ.) (da pianificare e comprendere)
-- 	Affinare la ricerca nel miglior modo anche per brand (cioè?)
-
-
-<br>
-
-#### ⚊ database [json] export
--	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--00FFFF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	fattibile : esportare db per nuove eventuali logiche via [js]
-
-
-<br>
-
-#### ⚊ da pianificare
-> Sono miglioramenti e re-checks con priorità non definita_
-
--	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	salvataggio descrizione varianti sempre uguale
-
-- 	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	shop.product.new.php -> selezione  categoria rimane rosso
-
--	[![](https://img.shields.io/badge/--FF00FF.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	shop.product.new.php -> selezione  store/distr rimane rosso
-
--	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--00F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	Preso da "🔸 fix: prodotti suggeriti senza alcuna logica".<br>
-    	Il sistema necessita di miglioramenti sulla logica di estrazione dei prodotti suggeriti.
-   	A product.php suggeriti ? che criterio?
-        	è riferita ad una chiamata custom tratta da productsearch: ApiGateway::SearchProduct(0,12,0,$data_Tags,'','','');
-	B dopo ricerca suggeriti ? che criterio?
-        	è riferita ad una chiamata reale dei suggeriti: "product/suggestion/?id=$id"
-	i prodotti suggeriti sono l'equivalente di <pre>
-
-	$searchsuggest = ApiGateway::SearchProduct(
-			0,                // int $pIndex = 0,
-			12,               // int $pSize = 100,
-			1,                // bool $andCondition = true,
-			'',//$data_Tags   // ?string $listOfTags = null,
-			'',               //?string $criteria = null,
-			'',               //?string $family = null,
-			'',               //?string $line = null,
-			'',               //?string $supplierCode = null,
-			null,             //?int $minPrice = null,
-			null,             //?int $maxPrice = null,
-			null,             //?int $minStars = null,
-			'id',               //?string $orderBy = null,
-			null,             //?int $orderDesc = null,
-			0,                //bool $matchCase = false,
-			'',               //string $listOfBrands = "",
-			'',               //string $listOfStores = "",
-			$PCatId,          //string $listOfCategories = "",
-			1                 //bool $showEnabled = true
-	); usleep($short); </pre>
-			forse il problema che "andCondition" deve essere true per la categoria e false per i tags. Cioè "più o meno quei tag ma solo ed esclusivamente in quella categoria per certo, oppure tutti di quella categoria"
-
-
-<br>
-
-#### ⚊ [freeze][ultima priorità] storici
-
-> vedi anche: costruire report
-> a differenza dei "report" dedicati alle "aziende clienti", qui si tratta di elencare le diverse azioni degli utenti al fine di un aiuto via tikets (sezione non presente in seexor e dunque non è attualmete considerati una reale priorità)
-
-
-<br>
-
-#### ⚊ [freeze][ultima priorità] migliorie su "crea e modifica"
-> richiesto da kristi. Solo post aggiornamento in main class;
-
--	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--00F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	varianti: Clona a partire da questo prodotto
-
--	[![](https://img.shields.io/badge/--F1F1F1.svg)]()
-	[![](https://img.shields.io/badge/--00F1F1.svg)]()
-	[![](https://img.shields.io/badge/--F1F1F1.svg)]()<br>
-	apri prodotto > parti da questo per un prodotto completamente nuovo
-
----
-
-
-#### ⚊ seexor V3
--	traduzione a full [js] ( meglio prima sperimentazione su fragments)
--	traduzione a full [js] ( attesa fine sviluppo kimera 2.9 o Visor )
-
----
-
-
-#### ⚊ E-COMMERCE / FUTURO ≛ ⇔ criteri di scelta per la pubblicazione dei prodotti:
-> mero appunto tecnico:
-- 	per conformità denominativa e del codice produttore (cosa significa?)
-- 	per presenza del prodotto in magazzino
-- 	per tempi di consegna
-- 	per costo spedizione
-- 	per prezzo
-
-
-
-[ftp]:https://en.wikipedia.org/wiki/File_Transfer_Protocol
-[server]:https://it.wikipedia.org/wiki/Server_web
-[localhost]:https://en.wikipedia.org/wiki/Localhost
-[patch]:https://it.wikipedia.org/wiki/Patch
-[update]:https://it.wikipedia.org/wiki/Patch
-[upgrade]:https://it.wikipedia.org/wiki/Patch
-[php]:https://it.wikipedia.org/wiki/PHP
-[frontend]:https://it.wikipedia.org/wiki/Front-end_e_back-end
-[backend]:https://it.wikipedia.org/wiki/Front-end_e_back-end
-[back-office]:https://it.wikipedia.org/wiki/Back_office
-[front-office]:https://it.wikipedia.org/wiki/Front_office
-[API]:https://it.wikipedia.org/wiki/Application_programming_interface
-[history-back]:https://developer.mozilla.org/en-US/docs/Web/API/Window/history
-[try/cath]:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch
-[script]:https://it.wikipedia.org/wiki/Script
-[github]:https://github.com/
-[repo]:https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-repositories
-[bug]:https://it.wikipedia.org/wiki/Bug
-[co-guard]:https://www.co-guard.eu/
-[querystring]:https://it.wikipedia.org/wiki/Query_string
-[SEM]:https://it.wikipedia.org/wiki/Search_engine_marketing
-[SEO]:https://it.wikipedia.org/wiki/Ottimizzazione_per_i_motori_di_ricerca
-[SMO]:https://it.wikipedia.org/wiki/Social_media_optimization
-[SHARING]:https://moz.com/blog/meta-data-templates-123
-[json]:https://it.wikipedia.org/wiki/JavaScript_Object_Notation
-[js]:https://it.wikipedia.org/wiki/JavaScript
-[javascript]:https://it.wikipedia.org/wiki/JavaScript
+spostato a prossimi aggiornamenti:
+ - 🔸 fix:    prodotti suggeriti senza alcuna logica
+ - ✖️ fix:    Ricerca frontoffice paginazione avanzata, filtri avanzati.
+ - ✖️ todo:    Manca gestione tags (elimina questo tag, aggiorna questo tag). E' probabile che per come impostata la cosa non sia facile o possibile farlo
+ - ✖️ todo:    Id unificativo per ricerca duplicati indipendenti dal nome
